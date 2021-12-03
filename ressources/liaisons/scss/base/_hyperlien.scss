@@ -1,0 +1,19 @@
+/**
+* @author Antoine Godbout
+*/
+
+.hyperlien {
+  color: $hyperlien;
+  text-decoration: none;
+  &--visited {
+    color: darken($hyperlien, 5%);
+  }
+  &--hover {
+    color: darken($hyperlien, 20%);
+    text-decoration: underline;
+  }
+  &--active {
+    color: $gris-pale;
+    text-decoration: underline;
+  }
+}

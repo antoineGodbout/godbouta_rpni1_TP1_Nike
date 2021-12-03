@@ -1,0 +1,54 @@
+/**
+* @author Antoine Godbout
+*/
+
+.nikeRun {
+  margin: 15% 0 10% 0;
+  position: relative;
+  text-align: center;
+  @media (min-width: 601px) {
+    margin: 0;
+  }
+  &__item {
+    &Image {
+      max-width: 100%;
+    }
+    &Lien {
+      text-decoration: none;
+      background-color: $bleu-bouton;
+      color: $blanc;
+      font-weight: bold;
+      text-transform: uppercase;
+      width: 160px;
+      height: 40px;
+      margin: 0 auto;
+      display: block;
+      line-height: 40px;
+      @include fontSize(16px);
+      border: 2px solid white;
+      border-radius: 20px;
+      position: relative;
+      top: -1.5em;
+      &:hover,
+      &:active {
+        color: $bleu-bouton;
+        background-color: $blanc;
+        border: 2px solid $bleu-bouton;
+      }
+    }
+    &Titre {
+      @include fontSize(24px);
+      color: $gris-fonce;
+      font-weight: bold;
+      text-transform: capitalize;
+      margin: 0;
+    }
+    &Texte {
+      color: $gris-moyen;
+      font-weight: lighter;
+      @include fontSize(16px);
+      margin-bottom: 0;
+    }
+
+  }
+}

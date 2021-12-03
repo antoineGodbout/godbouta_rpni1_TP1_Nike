@@ -1,0 +1,17 @@
+/* Error: Undefined mixin.
+ *    ,
+ * 16 |       @include fontSize(24px);
+ *    |       ^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   c:\users\école\sites\rpni1\tp1_nike\ressources\liaisons\scss\modules\nikerun.scss 16:7  root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a    \2577 \a 16 \2502        @include fontSize(24px);\d\a    \2502        ^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   c:\\users\\école\\sites\\rpni1\\tp1_nike\\ressources\\liaisons\\scss\\modules\\nikerun.scss 16:7  root stylesheet";
+}

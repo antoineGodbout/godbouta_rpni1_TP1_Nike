@@ -1,0 +1,51 @@
+/**
+ * @author Antoine Godbout
+**/
+.actualite {
+  margin-bottom: 20%;
+  text-align: center;
+  @media (min-width: 601px) {
+    margin-bottom: 5%;
+  }
+  &__item {
+    box-shadow: 0 2px 5px $gris-fonce;
+    display: block;
+    max-width: 90%;
+    margin: 0 auto 5% auto;
+    text-decoration: none;
+    @media (min-width: 601px) {
+      margin: 0;
+      max-width: 100%;
+    }
+    &:hover,
+    &:active {
+      border: 1px solid $gris-fonce;
+    }
+    &Image {
+      max-width: 100%;
+    }
+    &Categorie {
+      @include fontSize(16px);
+      color: $bleu;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+    &Titre {
+      @include fontSize(16px);
+      color: $noir;
+      font-weight: bolder;
+    }
+    &Date {
+      @include fontSize(16px);
+      color: $gris-moyen;
+      font-weight: bolder;
+    }
+  }
+
+}
+.pub {
+  margin-bottom: 10%;
+  @media (min-width: 601px) {
+    margin-bottom: 5%;
+  }
+}

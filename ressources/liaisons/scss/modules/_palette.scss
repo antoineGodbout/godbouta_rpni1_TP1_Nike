@@ -1,0 +1,56 @@
+/**
+* @author Antoine Godbout
+*/
+
+.palette {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  &__item {
+    flex: 1 1 100%;
+    text-align: center;
+    margin-right: 2em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__couleur {
+    border: 1px solid black;
+    padding-top: 70%;
+    /* Complétez ici pour chacune des variations de couleurs
+     * (Ex. .palette__couleur--bleuMoyen)
+     * Utilisez & pour composer vos sélecteurs CSS selon l'approche BEM
+     */
+    &--noir {
+      background-color: $noir;
+    }
+    &--gris-fonce {
+      background-color: $gris-fonce;
+    }
+    &--gris-moyen {
+      background-color: $gris-moyen;
+    }
+    &--gris-pale {
+      background-color: $gris-pale;
+    }
+    &--gris-tres-pale {
+      background-color: $gris-tres-pale;
+    }
+    &--blanc {
+      background-color: $blanc;
+    }
+    &--bleu {
+      background-color: $bleu;
+    }
+    &--bleu-bouton {
+      background-color: $bleu-bouton;
+    }
+  }
+  &__details {
+    font-size: 0.75em;
+  }
+}

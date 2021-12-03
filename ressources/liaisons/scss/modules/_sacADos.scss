@@ -1,0 +1,37 @@
+/**
+* @author Antoine Godbout
+*/
+
+.sacADos {
+  max-width: 80%;
+  border: 1px solid $gris-pale;
+  margin: 0 auto;
+  position: relative;
+  @media (min-width: 601px) {
+    margin: 0;
+  }
+  &__item {
+    &Titre {
+      @include fontSize(24px);
+      font-weight: bolder;
+      text-transform: uppercase;
+      margin: 5% auto 0 5%;
+    }
+    &Texte {
+      @include fontSize(16px);
+      font-weight: normal;
+      margin: 2% 5%;
+    }
+    &Image {
+      max-width: 70%;
+      position: relative;
+      bottom: -10%;
+      left: -12%;
+      z-index: -10;
+      @media (min-width: 601px) {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}

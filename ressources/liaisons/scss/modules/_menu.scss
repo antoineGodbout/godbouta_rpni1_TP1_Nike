@@ -1,0 +1,90 @@
+/**
+ * @author Antoine Godbout
+**/
+
+/* Bouton du menu */
+.menu {
+    border-top: 0.5px solid $gris-pale;
+    margin-top: 5%;
+    padding: 0 2%;
+    @media (min-width: 601px) {
+        margin-top: 4%;
+        padding: 0;
+    }
+    &__controle {
+        background-color: $noir;
+        color: $blanc;
+        border: none;
+        padding: 10px;
+        min-width: 40px;
+        @media (min-width: 601px) {
+                display: none;
+            }
+
+        &:hover,
+        &:active {
+            background-color: $blanc;
+            color: $noir;
+        }
+        &:focus {
+            outline-offset: -5px;
+            outline: $blanc auto 5px;
+        }
+    }
+    &__liste {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-height: none;
+        &Item {
+            color: $blanc;
+            @media (min-width: 601px) {
+                display: inline-block;
+                text-align: center;
+            }
+        }
+        @media (min-width: 601px) {
+            margin: 0 auto;
+        }
+    }
+    &__lien {
+        background-color: $noir;
+        color: $blanc;
+        display: block;
+        padding: 5px 10px;
+        width: 100%;
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+        &:hover,
+        &:active {
+            background-color: $blanc;
+            color: $noir;
+        }
+        &:focus {
+            outline-offset: -5px;
+            outline: $blanc auto 5px;
+        }
+        &--actif {
+            border-left: 5px solid $blanc;
+        }
+    }
+}
+
+
+.js .menu__liste {
+    max-height: 100vh;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.js .menu--ferme .menu__liste {
+    max-height: 0;
+}
+@media (min-width: 601px) {
+    .js .menu--ferme .menu__liste {
+        max-height: none;
+    }
+}

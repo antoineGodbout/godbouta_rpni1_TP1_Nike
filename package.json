@@ -1,0 +1,14 @@
+{
+  "name": "tp1_nike",
+  "version": "1.0.0",
+  "description": "Travail pratique RPNI1.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Antoine Godbout",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
+  }
+}

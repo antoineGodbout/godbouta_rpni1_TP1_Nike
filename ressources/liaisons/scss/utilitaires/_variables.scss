@@ -1,0 +1,33 @@
+/**
+* @author Antoine Godbout
+*/
+
+/** Polices de caractères **/
+
+@font-face {
+  font-family: Futura, sans-serif;
+  src: 	url('../fonts/worksans.ttf') format('truetype');
+}
+
+$fontePrimaire : Work Sans, sans-serif;
+$fonteSecondaire : Arial, sans-serif;
+
+/** Palette de couleurs **/
+// Utiliser http://chir.ag/projects/name-that-color pour obtenir des noms uniques et mémorisables
+// Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop étrange
+
+/* Couleurs de base */
+$noir: #000000;
+$gris-fonce: #444444;
+$gris-moyen: #8F8F8F;
+$gris-pale: #C4C4C4;
+$gris-tres-pale: #D6D6D6;
+$blanc: #FFFFFF;
+$bleu: #4B8FE2;
+$bleu-bouton: #3DC8F1;
+
+/** HyperLien **/
+$hyperlien: $bleu;
+
+/** Points de rupture **/
+$desktop : 601px;

@@ -1,0 +1,62 @@
+/**
+ * @author Antoine Godbout
+**/
+
+.produits {
+  margin-bottom: 20%;
+  padding: 0 5%;
+  @media (min-width: 601px) {
+    padding: 0;
+    margin-bottom: 5%;
+  }
+  &__boite {
+    text-align: center;
+    @media (min-width: 601px) {
+      box-shadow: 0 2px 5px $gris-fonce;
+    }
+  }
+  &__item {
+    text-decoration: none;
+    display: block;
+    margin: 0 auto 5% auto;
+    @media (min-width: 601px) {
+      max-width: 162px;
+    }
+    &:hover,
+    &:active,
+    &:focus {
+      border: 1px solid $gris-fonce;
+    }
+    &Titre {
+      @include fontSize(20px);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &Image {
+      max-width: 99.5%;
+      border: 1px solid $gris-tres-pale;
+      @media (min-width: 601px) {
+        max-width: 160px;
+      }
+    }
+    &Nom {
+      @include fontSize(18px);
+      color: $gris-fonce;
+      text-transform: capitalize;
+      font-weight: normal;
+    }
+    &Sexe {
+      @include fontSize(16px);
+      color: $gris-fonce;
+      text-transform: lowercase;
+      margin: 0;
+      padding: 0;
+    }
+    &Prix {
+      @include fontSize(16px);
+      color: $gris-fonce;
+      font-weight: bolder;
+      margin-top: 5%;
+    }
+  }
+}

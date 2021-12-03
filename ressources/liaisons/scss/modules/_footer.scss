@@ -1,0 +1,138 @@
+/**
+* @author Antoine Godbout
+*/
+
+.footer {
+  &__flex {
+    @media (min-width: 601px) {
+      flex-wrap: wrap;
+    }
+  }
+  &--bleed {
+    background-color: $gris-fonce;
+    width: 100%;
+    padding: 1% 0;
+  }
+  &__Nav {
+    &Normal {
+      @media (min-width: 601px) {
+        order: 2;
+      }
+    }
+    &Media {
+      @media (min-width: 601px) {
+        order: 3;
+      }
+    }
+  }
+  &__item {
+    &Credits {
+      @media (min-width: 601px) {
+        order: 4;
+      }
+    }
+    &Medias {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      width: 60%;
+      margin: 0 auto;
+      height: 100px;
+      @media (min-width: 601px) {
+        margin: 0;
+        width: 100%;
+        align-items: center;
+        margin-top: 10px;
+        justify-content: space-around;
+      }
+      &Liens {
+        margin-top: 100px;
+        padding: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @media (min-width: 601px) {
+          padding: 12px;
+        }
+      }
+      &Liste {
+        height: 40px;
+      }
+    }
+    &Nav {
+      list-style: none;
+      padding: 0;
+      @media (min-width: 601px) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &Liste {
+      margin-top: 1em;
+    }
+    &Lien {
+      text-decoration: none;
+      color: $gris-pale;
+      text-align: center;
+      margin: 0 auto;
+      display: block;
+      @include fontSize(16px);
+      text-transform: uppercase;
+      &:hover,
+      &:active,
+      &:focus {
+        color: $blanc;
+      }
+    }
+    &Texte {
+      @include fontSize(16px);
+      color: $gris-moyen;
+      font-weight: 500;
+      padding: 0 5%;
+      text-align: center;
+      @media (min-width: 601px) {
+        order: 5;
+        padding: 0;
+        text-align: left;
+      }
+    }
+    &Logo {
+      max-width: 25%;
+      margin: 0 auto;
+      display: block;
+      @media (min-width: 601px) {
+        order: 1;
+        margin: 0 17% 0 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+.facebook {
+  background-image: url("../images/logos/facebook.svg");
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../images/logos/facebook_blanc.svg");
+  }
+}
+.twitter {
+  background-image: url("../images/logos/twitter.svg");
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../images/logos/twitter_blanc.svg");
+  }
+}
+.dribble {
+  background-image: url("../images/logos/dribble.svg");
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: url("../images/logos/dribble_blanc.svg");
+  }
+}

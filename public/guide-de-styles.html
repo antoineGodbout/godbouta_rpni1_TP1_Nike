@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Guide de styles</title>
+  <link rel="stylesheet" href="liaisons/css/styles.css">
+</head>
+<body id="gds" class="gds">
+  <h1 class="gds__titre">Guide de styles</h1>
+
+  <section>
+
+    <h2 class="gds__sousTitre">Couleurs</h2>
+
+    <ul class="palette">
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--noir"></div>
+        <p class="palette__description"><code>$noir</code> <br>#000000</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--gris-fonce"></div>
+        <p class="palette__description"><code>$gris-fonce</code> <br>#444444</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--gris-moyen"></div>
+        <p class="palette__description"><code>$gris-moyen</code> <br>#8F8F8F</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--gris-pale"></div>
+        <p class="palette__description"><code>$gris-pale</code> <br>#C4C4C4</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--gris-tres-pale"></div>
+        <p class="palette__description"><code>$gris-tres-pale</code> <br>#D6D6D6</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--blanc"></div>
+        <p class="palette__description"><code>$blanc</code> <br>#FFFFFF</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--bleu"></div>
+        <p class="palette__description"><code>$bleu</code> <br>#4B8FE2</p>
+      </li>
+
+      <li class="palette__item">
+        <div class="palette__couleur palette__couleur--bleu-bouton"></div>
+        <p class="palette__description"><code>$bleu-bouton</code> <br>#3DC8F1</p>
+      </li>
+
+    </ul>
+
+    <table class="gds__tableau">
+      <thead>
+      <tr>
+        <th><h2 class="gds__sousTitre">Textes - Desktop</h2></th>
+        <th><h2 class="gds__sousTitre">Textes - Mobile</h2></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--desktop">Titre niveau 1</p>
+          <p>
+            <small>Futura medium, 48pts sur écran large</small>
+            <br><small>Rectangle de 150px x 8px, couleur $bleuMoyen</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau1 titreNiveau1--mobile">Titre niveau 1</p>
+          <p>
+            <small>Futura medium, 42 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--desktop">Titre niveau 2</p>
+          <p>
+            <small>Futura medium, 28pts sur écran large</small>
+          </p></td>
+        <td>
+          <p class="titreNiveau2 titreNiveau2--mobile">Titre niveau 2</p>
+          <p>
+            <small>Futura medium, 24 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--desktop">Titre niveau 3</p>
+          <p>
+            <small>Futura medium, 22pts sur écran large</small>
+          </p>
+        </td>
+        <td>
+          <p class="titreNiveau3 titreNiveau3--mobile">Titre niveau 3</p>
+          <p>
+            <small>Futura medium, 18 pts sur écran étroit</small>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="texte texte--desktop">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(Arial, 16pts avec interlignage de 24 pts)</small></p>
+        </td>
+        <td>
+          <p class="texte texte--mobile">Texte courant lorem ipsum dolor sit amet, consectetur adipisicing elit. A corporis dolores enim eveniet id inventore laborum modi nam necessitatibus officia, perspiciatis quasi sint soluta, suscipit voluptates? Esse ex harum incidunt.</p>
+          <p><small>(Arial, 16pts avec interlignage de 22 pts)</small></p>
+        </td>
+      </tr>
+
+      </tbody>
+    </table>
+
+
+    <h2 class="gds__sousTitre">Boutons / Éléments interactifs</h2>
+
+    <h3 class="gds__categorie">Hyperliens de base (pas de classe)</h3>
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien"  href="#">a:link</a></p>
+        <p>Couleur $hyperlien <br>(équivalente à $bleu)</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--visited"  href="#">a:visited</a></p>
+        <p>Couleur $hyperlien plus foncée de 5%</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--hover"  href="#">a:hover</a></p>
+        <p>Couleur $hyperlien plus foncée de 20% <br>Souligné</p>
+
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a class="hyperlien hyperlien--active"  href="#">a:active</a></p>
+        <p>Couleur $gris-pale <br>Souligné</p>
+      </li>
+    </ul>
+
+    <h3 class="gds__categorie">Boutons</h3>
+    <ul class="listeInteractivite">
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton">En savoir plus</a></p>
+        <p>État de base</p>
+        <p>Couleur $bleu-bouton, <code>#3DC8F1</code> de 18px</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton bouton--hover">En savoir plus</a></p>
+        <p>État survol</p>
+        <p>Couleur $blanc, <code>#FFFFFF</code> de 18px</p>
+      </li>
+      <li class="listeInteractivite__item">
+        <p><a href="#" class="bouton bouton--active">En savoir plus</a></p>
+        <p>État actif</p>
+        <p>Couleur $blanc, <code>#FFFFFF</code> de 18px</p>
+      </li>
+    </ul>
+  </section>
+</body>
+</html>

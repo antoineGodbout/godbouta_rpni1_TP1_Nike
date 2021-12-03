@@ -1,0 +1,25 @@
+/**
+* @author Antoine Godbout
+*/
+
+.bouton {
+  background-color: $bleu-bouton;
+  width: 140px;
+  height: 40px;
+  border-radius: 3em;
+  color: $blanc;
+  border: 1px solid $blanc;
+  padding: 1em 1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  &--hover {
+    background-color: $blanc;
+    color: $bleu-bouton;
+    border: 1px solid $bleu-bouton;
+  }
+  &--active {
+    background-color: $blanc;
+    color: $bleu-bouton;
+    border: 1px solid $bleu-bouton;
+  }
+}
